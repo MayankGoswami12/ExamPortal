@@ -1,0 +1,32 @@
+
+.element {
+    width: 85%;
+    position: absolute;
+    top: -8%;
+    left: 6%;
+}
+.profile-image{
+    max-width: 150px;
+    max-height: 130px;
+    border: blue;
+}
+.table{
+    width: 70%;
+    border-collapse: collapse;
+}
+.table tr td{
+
+    padding: 10px 50px;
+    border: 0.5px solid #e2e2e2;
+}
+
+
+.text-center {
+    text-align: -webkit-center;
+}
+.button{
+    text-align: center;
+    
+    align-items: center;
+    justify-content: center !important
+}

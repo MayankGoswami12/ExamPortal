@@ -1,0 +1,10 @@
+.height {
+    text-align: center;
+    margin-top: -33%;
+    width: 85%;
+    margin-left: auto;
+}
+.example-header-image {
+    background-image: url('../../../../assets/test.png');
+    background-size: cover;
+  }

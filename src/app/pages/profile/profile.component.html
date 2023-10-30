@@ -1,0 +1,61 @@
+<div style="margin: 9%" class="element" >
+<mat-card *ngIf="user">
+    <h2>Your Profile Details</h2>
+    <!-- {{user | json}} -->
+    <mat-card-content>
+
+        <div class="bootstrap-wrapper">
+
+            <div class="container">
+
+                <div class="container text-center">
+                    <img src="https://srcwap.com/wp-content/uploads/2022/08/abstract-user-flat-4.png" 
+                    alt=""
+                    class="profile-image"
+                    />
+                    <h1 class="mt20">{{user.firstname}} {{user.lastname}}</h1>
+                </div>
+
+                <div class="row">
+
+                    <div col-md-10 offset-md-1 class="text-center" >
+                        <table class="table">
+                            <tr>
+                                <td>username</td>
+                                <td>{{user.username}}</td>
+                            </tr>
+                            <tr>
+                                <td>userid</td>
+                                <td>EXAM{{user.id}}</td>
+                            </tr>
+                            <tr *ngIf="user.phone">
+                                <td>phone</td>
+                                <td>{{user.phone}}</td>
+                            </tr>
+                            <tr>
+                                <td>Role</td>
+                                <td>{{user.authorities[0].authority }}</td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td>{{user.enabled ? "ACTIVE" : "NOTACTIVE"}}</td>
+                            </tr>
+                        </table>
+                       
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </mat-card-content>
+    <div class="button">
+     <mat-card-actions class="button">
+        <button mat-button mat-raised-button color="primary">UPDATE</button>
+        <button mat-button mat-raised-button color="accent">SHARE</button>
+     </mat-card-actions>
+</div>
+    </mat-card>
+</div>

@@ -1,0 +1,49 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-6 offset-md-3">
+
+                <div class="container  text-center" >
+                <mat-card  class="text-center" style="width: 50%; margin-left: 25%;">
+                    <div class="container text-center">
+                        <img src="../../../assets/logo.png.png" alt="">
+                    </div>
+                    <div class="container text-center">
+                        <h1 class="text-center">Login Here !!</h1>
+
+
+                        
+
+                        <form (ngSubmit)="formSubmit()" >
+
+                            <mat-form-field class="full-width" appearance="fill">
+                                <mat-label>User Name</mat-label>
+                                <input 
+                                [(ngModel)]="loginData.username"
+                                name="username"
+                                required matInput placeholder="Enter Here" />
+                            </mat-form-field>
+
+                            <p>
+                                <mat-form-field class="full-width" appearance="fill">
+                                    <mat-label>Password</mat-label>
+                                    <input 
+                                    [(ngModel)]="loginData.password"
+                                    name="password"
+                                     type="password" required matInput placeholder="Enter Here" />
+                                </mat-form-field>
+                            </p>
+
+                            <div class="container text-center">
+                                <button type="submit" mat-raised-button color="primary">Login</button>
+                                <button style="margin-left: 20px" mat-raised-button color="accent">Reset</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
